@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OMA CULTURE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="main">
+     <div class="navbar">
+       
+      <div class="icon">
+            <h2 class="logo">Oma-culture🌍</h2>
+        </div>
+       
+        <div class="menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">LOGIN</a></li>
+          </ul> 
+        </div>
+
+          <div class="search">
+            <input class="srch" type="search"placeholder="Type To search">
+            <a href="#"> <button class="btn">Search</button></a>
+          </div>
+
+      </div>
+          <div class="content">
+            <h2>OMA-CULTURE<br><span>VOTRE CULTURE NOTRE PASSION</span></h2>
+            <p class="par">OMA-CULTURE est une initiative dédiée à la valorisation de l’agriculture et du secteur agro.</p>
+            <p>Notre mission est claire : accompagner, développer et promouvoir la culture agricole avec passion,</p>
+            <p> expertise et engagement.</p>
+            <p>Grâce à une approche innovante et durable, nous offrons des solutions adaptées aux besoins des agriculteurs,</p>
+            <p>des entreprises et des communautés rurales.</p>
+            <p>Nous croyons que chaque culture mérite attention, respect et innovation.</p> 
+            <p>C’est pourquoi OMA CULTURE place l’agriculteur, la terre et la production durable au cœur de son action.</p>
+            <button class="cn"><a href="#">Join Us</a></button>
+            <div class="form">
+              <h2>login Here</h2>
+              <input type="email" name="email" placeholder="Enter Email Here">
+              <input type="password" name="password" placeholder="Enter password Here">
+              <button class="btnn">Login</button>
+              <p class="link">Don't have an account?<br>
+              <a href="#">Sign up </a> here</a>
+            </p>
+              <p class="liw">log in with</p>
+
+              <div class="icon">
+                 <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                 <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                 <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                 <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                 <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </div>
+
+            </div>
+          </div>
+       </div>
+     </div>
+   </div>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+
+.menu ul li a {
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #00eaff;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,234,255,0.4);
+}
+
+
+.content {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.form input,
+.form textarea {
+  transition: 0.3s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(0,234,255,0.6);
+}
+
+.active {
+  color: #00eaff !important;
+}
+
+
+.content p,
+.content ul {
+  margin-top: 15px;
+}
+
+
+.footer {
+  margin-top: 80px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+  font-size: 14px;
+}
